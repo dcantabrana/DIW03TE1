@@ -21,8 +21,24 @@ a:link {text-decoration: none }
 h1{
     color:white;
     font-size: 28px;
-    font-weight: bold;
     letter-spacing: 0.05em;
+}
+h2{
+    font-size:26px;
+}
+h3{
+    font-size: 19px;
+}
+h4{
+    font-size:16px;
+}
+h5{
+    color:white;
+    font-size:18px;
+}
+h1,h2,h4,h5{
+    font-weight: bold;
+    margin: 12px 0px;
 }
 
 /* ---------------- HEADER - LOGO ---------------- */
@@ -88,7 +104,58 @@ header nav ul li a{
 
 
 
-
+/* -------------------- FOOTER -------------------- */
 footer {
+    padding: 30px;
     background: #592517;
+    display: flex;
+    color: #d1d1d1;
+    font-size: 11px;
 }
+.foo-col1{
+    flex-grow:1;
+    /* width: 40%; */
+    
+}
+.foo-col2{
+    flex-grow:1;
+    /* width: 25%; */
+}
+.foo-col2 a img{
+    width: 45px;
+    margin: 10px 5px;
+}
+.foo-col3{
+    flex-grow:1;
+    /* width: 35%; */
+}
+.foo-col3 img{
+    width: 350px;
+    margin:15px 0px;
+}
+#form-cont{
+    margin: 20px 0px;
+}
+#form-cont table tr td{
+    padding:5px;
+}
+
+input[name="comentarios"] {
+    height: 4.5em;
+}
+
+form input[type="submit"]{
+	padding:8px 20px;
+	border:1px solid #707070;
+	border-radius:5px;
+    /* display:block; */
+	color:#592517;
+    background-color:#e0a45e;
+} 
+.form-bot{
+    float: right;
+}
+form input[type="submit"]:hover{
+	cursor:pointer;
+}
+
