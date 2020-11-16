@@ -1,38 +1,226 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="DIW03 Tarea evaluacion 1" />
     <!-- <meta name="keywords" content="SEO" /> -->
     <title>DIW03 - David Cantabrana</title>
 
     <!-- Carga de fichero css -->
-    <!-- <link rel="stylesheet" href="misEstilos.css" /> -->
+    <link rel="stylesheet" href="css/main.css"/>
     <!-- <script src="">  </script> -->
 </head>
 <body>
-    <header>
+    <main>
+        <header>
+            <p><a href="https://google.es">ES</a>
+            <span>.</span>
+            <a href="https://google.es">PT</a></p>
+
         <!-- Menu  Dentro del header?-->
         <nav>
-
+            <ul>
+                <li><a href="">INICIO</a></li>
+                <li><a href="">QUIENES SOMOS</a></li>
+                <li><a href="">PRODUCTOS</a></li>
+                <li><a href="">REALIZAR PEDIDO</a></li>
+                <li><a href="">CONTACTANOS</a></li>
+            </ul>
         </nav>
-    </header>
-
-    <main>
+        <img src="img/cabecera.jpg">
+        <h1>Migas hermanas siempre pensando en ti ;)</h1>
+        </header>
+        
         <section>
-            
+            <h2>Nuestros productos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam rerum sit repellat obcaecati, nobis aperiam, ullam, modi fugit similique blanditiis nostrum molestias impedit suscipit dicta id sequi! Saepe, quis omnis.</p>
+            <img src="img/pan.jpg">
+            <a href="">PANADERÍA</a>
+            <img src="img/croissant.jpg">
+            <a href="">PASTELERÍA</a>
         </section>
-        <aside>
 
-        </aside>
+        <section>
+            <h2>Realiza tu pedido</h2>
+            <form method="post" name="formulario">
+                <table>
+                    <tr>
+                        <td><label for="nombre">Nombre:</label></td>
+                        <td><input type="text" name="nombre"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="apellidos">Apellidos:</label></td>
+                        <td><input type="text" name="apellidos"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="text" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td><h3>¿Qué productos quieres comprar?</h3></td>
+                    </tr>
+                    <tr>
+                        <td><h4>Nuestros salados</h4></td>
+                        <td><h4>Nuestros dulces</h4></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="pan-trigo" value="pan-trigo">
+                            <label for="pan-trigo">Pan de trigo</label>          
+                        </td>
+                        <td>
+                            <input type="checkbox" name="croissant" value="croissant">
+                            <label for="croissant">Croissant</label>          
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="pan-pais" value="pan-pais">
+                            <label for="pan-pais">Pan de trigo del país</label>          
+                        </td>
+                        <td>
+                            <input type="checkbox" name="donut" value="donut">
+                            <label for="donut">Donut</label>          
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="pan-centeno" value="pan-centeno">
+                            <label for="pan-centeno">Pan de centeno</label>          
+                        </td>
+                        <td>
+                            <input type="checkbox" name="macarrons" value="macarrons">
+                            <label for="macarrons">Macarrons</label>          
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="pan-integral" value="pan-integral">
+                            <label for="pan-integral">Pan integral sin sal</label>          
+                        </td>
+                        <td>
+                            <input type="checkbox" name="ensaimadas" value="ensaimadas">
+                            <label for="ensaimadas">Ensaimadas</label>          
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="pan-cereales" value="pan-cereales">
+                            <label for="pan-cereales">Pan de cereales</label>          
+                        </td>
+                        <td>
+                            <input type="checkbox" name="napolitanas" value="napolitanas">
+                            <label for="napolitanas">Napolitanas</label>          
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="pan-ajo" value="pan-ajo">
+                            <label for="pan-ajo">Pan de ajo</label>          
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="pan-nueces" value="pan-nueces">
+                            <label for="pan-nueces">Pan de nueces</label>          
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="pan-quinoa" value="pan-quinoa">
+                            <label for="pan-quinoa">Pan de quinoa</label>          
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="pan-cebolla" value="pan-cebolla">
+                            <label for="pan-cebolla">Pan de cebolla</label>          
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="pretzel" value="pretzel">
+                            <label for="pretzel">Pretzel</label>          
+                        </td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="aviso-legal" value="aviso-legal">
+                            <label for="aviso-legal">Acepto el aviso legal.</label>          
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="button" value="Realizar pedido"></td>
+                    </tr>
+                    <p></p>
+                </table>
+            </form>
+        </section>   
+        
+        <footer>
+
+            <section>
+                <h3>Contacta con nosotros</h3>
+                <p>www.migashermanas.com <span>.</span> info@migashermanas.com</p>
+
+                <form method="post" name="formulario-contacto">
+                    <table>
+                        <tr>
+                            <td><label for="nombre">Nombre:</label></td>
+                            <td><input type="text" name="nombre"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="apellidos">Apellidos:</label></td>
+                            <td><input type="text" name="apellidos"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email:</label></td>
+                            <td><input type="text" name="email"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="comentarios">Comentarios:</label></td>
+                            <td><input type="text" name="comentarios"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="checkbox" name="aviso-legal" value="aviso-legal">
+                                <label for="aviso-legal">Acepto el aviso legal.</label>          
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="button" value="Enviar"></td>
+                        </tr>
+                    </table>
+                </form>
+
+            </section>
+
+            <section>
+                <h3>Siguenos en:</h3>
+                <a href=""><img src="img/facebook.png"></a>
+                <a href=""><img src="img/001-twitter.png"></a>
+                <a href=""><img src="img/002-instagram.png"></a>
+            </section>
+
+            <section>
+                <h3>Localización</h3>
+                <address>Av. Luis Espada, N°26 Bajo, 32600 Verín, Province of Ourense.</address>
+                <img src="img/localizacion.png">
+            </section>
+
+        </footer>
     </main>
-
-    
-
-    <footer>
-
-    </footer>
     
 </body>
 </html>
