@@ -5,12 +5,12 @@
 /* Fuente */
 @font-face{
     font-family: 'Montserrat';
-    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 }
 
 /* ---------------- ETIQUETAS EN GENERAL ---------------- */
 body{
-    font-family: Arial, 'Montserrat';
+    font-family: 'Montserrat', 'Arial';
 }
 a{
     text-decoration: none;
@@ -25,23 +25,35 @@ h1{
 }
 h2{
     font-size:26px;
+    text-align: center;
+    padding-bottom: 30px;
 }
 h3{
-    font-size: 19px;
+    /* margin:20px 0px; */
+    padding-top:30px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 18px; 
 }
 h4{
-    font-size:16px;
+    font-size:14px;
 }
 h5{
     color:white;
-    font-size:18px;
+    font-size:17px;
 }
 h1,h2,h4,h5{
     font-weight: bold;
     margin: 12px 0px;
 }
+table{
+    font-size: 11px;
+}
 
 /* ---------------- HEADER - LOGO ---------------- */
+.idioma{
+    font-weight: 700;
+}
 header .logo{  
     background: #fefbf2;
     height: 200px;
@@ -64,7 +76,7 @@ header .logo p{
    font-size: 13px;
 }
 
-/* -------------------- MENU -------------------- */
+/* -------------------- MENU NAV -------------------- */
 header nav{
     background: #f79645;
     display: flex;
@@ -83,6 +95,10 @@ header nav ul li:hover{
 header nav ul li a{
     color: white;
     padding: 25px 10px;
+}
+/* Seleccion pagina actual */
+header nav ul li:nth-child(1){
+    background: rgba(255, 255, 255,.2);
 }
 
 /* -------------------- IMAGEN BANNER -------------------- */
@@ -133,29 +149,172 @@ footer {
     width: 350px;
     margin:15px 0px;
 }
+
+/* -------------------- FORMULARIO CONTACTA -------------------- */
 #form-cont{
     margin: 20px 0px;
 }
-#form-cont table tr td{
-    padding:5px;
-}
-
 input[name="comentarios"] {
     height: 4.5em;
 }
 
+/* También lo aplica al boton de otro formulario, Realiza tu pedido */
 form input[type="submit"]{
-	padding:8px 20px;
-	border:1px solid #707070;
-	border-radius:5px;
-    /* display:block; */
-	color:#592517;
+    padding:8px 20px;
+    border:1px solid #707070;
+    color:#592517;
     background-color:#e0a45e;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 } 
-.form-bot{
-    float: right;
-}
 form input[type="submit"]:hover{
-	cursor:pointer;
+    cursor:pointer;
+    background: #fd8ca0;
 }
 
+#form-cont label{
+    width: 80px;  
+}
+.aviso{
+    margin-top:4px;
+    margin-left: 4px;
+    width:120px !important;
+}
+#form-cont li{
+    display: flex;
+    margin: 10px 0px;
+    align-items: center;
+}
+.form-com{
+    align-self: flex-start;
+    margin-top: 5px;
+}
+#form-enviar{
+    width: 153px;
+}
+#form-enviar input{
+    float:right;
+}
+
+/* -------------------- MAIN DIVISION -------------------- */
+body main{
+    display: flex;
+    width: 100%;
+}
+.col-uno{
+    padding: 40px 60px;
+    width: 55%;
+}
+
+.col-dos{
+    background: #f2f2f2;
+    padding-top: 40px;
+    width: 45%;
+}
+
+
+/* -------------------- NUESTROS PRODUCTOS -------------------- */
+
+.col-uno img{
+    /* width: 260px;
+    min-width: 130px;
+    height: 170px;
+    min-height: 100px; */
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+}
+.img-prod{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0px;
+}
+.img-prod div{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.img-prod div img{
+    margin:10px 0px;
+}
+.img-prod div a{
+    margin-top:20px;
+    padding:16px 20px;
+    background: #e0a45e;
+    border-radius:30px ;
+    -webkit-border-radius:30px ;
+    -moz-border-radius:30px ;
+    -ms-border-radius:30px ;
+    -o-border-radius:30px ;
+    width: 150px;
+    color: white;
+} 
+.img-prod div a:hover{
+    cursor:pointer;
+    background: #fd8ca0;
+}
+
+/* -------------------- REALIZA TU PEDIDO -------------------- */
+/* .col-dos div{
+    background: #fafafa !important;
+} */
+.col-dos table{
+    margin:0 auto;
+    width: 80%;
+    /* font-size:12px; */
+}
+
+.ul-uno li{
+    display: flex;
+    margin: 10px 0px;
+    align-items: center;
+    justify-content: center;
+
+}
+.ul-uno{
+    margin-bottom: 30px;
+    margin-top:10px;
+
+}
+.ul-uno label{
+    width: 80px;
+    font-size:12px 
+}
+.ul-uno li input{
+    width: 220px;
+    height: 23px;
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.ul-dos{
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+}
+.div-ul-dos{
+    background: #fafafa;
+    padding-bottom: 30px;
+}
+.div-ul-dos li{
+    margin:7px 0px;
+}
+
+.div-tres{
+    padding:40px 0px;
+    text-align: center;
+    font-size: 13px;
+}
+.btn-realiza{
+    margin:30px;
+}
