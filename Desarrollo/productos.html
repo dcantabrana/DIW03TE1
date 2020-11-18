@@ -1,1 +1,123 @@
-productos
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DIW03 Tarea evaluacion 1" />
+    <title>Productos - MIGAS HERMANAS</title>
+    <!-- Carga de fichero css -->
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+
+<body>
+    <header>
+
+        <!-- Logo y cambio idioma, opion activada con clase act-negrita podia poner etiqueta b o strong pero al ser otro tipo de fuente especial no funciona por lo que con un class se arregla-->
+        <div class="logo">
+            <img src="img/logotipo.png" alt="Migas Hermanas">
+            <p>
+                <a class="act-negrita" href="index.html">ES</a>
+                <span>&middot;</span>
+                <a href="index-pt.html">PT</a>
+            </p>
+        </div>
+
+        <!-- Menu, opcion activada con class act-menu-->
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="quienes-somos.html">QUIENES SOMOS</a></li>
+                <li class="act-menu"><a href="productos.html">PRODUCTOS</a></li>
+                <li><a href="realizar-pedido.html">REALIZAR PEDIDO</a></li>
+                <li><a href="contactar.html">CONTACTANOS</a></li>
+            </ul>
+        </nav>
+
+        <!-- Imagen con texto -->
+        <div class="ban">
+            <img src="img/cabecera_dos.jpg" alt="Migas hermanas baner">
+            
+        </div>
+
+    </header>
+    
+    <main class="pag-main">
+
+        <section class="col-uno">
+            <h2>Nuestros productos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam rerum sit repellat obcaecati, nobis aperiam, ullam, modi fugit similique blanditiis nostrum molestias impedit suscipit dicta id sequi! Saepe, quis omnis. Lorem ipsum dolor sit amet consectetur </p>
+            <div class="img-prod">
+                <div>
+                    <img src="img/pan.jpg" width="280" height="190" alt="Panadería">
+                    <a href="panaderia.html">PANADERÍA</a>
+                </div>
+                <div>
+                    <img src="img/croissant.jpg" width="280" height="190" alt="Pastelería">
+                    <a href="pasteleria.html">PASTELERÍA</a>
+                </div>
+            </div>
+        </section>
+        
+        
+    </main>   
+    
+    <footer class="i-footer">
+        <!-- Dividido en 3 partes para las 3 columnas -->
+        <!-- 1°COLUMNA FOOTER-->
+        <section class="foo-col1">
+            <h5>Contacta con nosotros</h5>
+            <p>www.migashermanas.com <span>&middot;</span> info@migashermanas.com</p>
+
+            <!-- Formulario de columna1 con lista para los datos -->
+            <form class="form-cont" method="post" name="formulario-contacto">
+                <ul>
+                    <li>
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" type="text" name="nombre">
+                    </li>
+                    <li>
+                        <label for="apellidos">Apellidos</label>
+                        <input id="apellidos" type="text" name="apellidos">
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input id="email" type="text" name="email">
+                    </li>
+                    <li>
+                        <label id="coment-label" for="comentarios">Comentarios</label>
+                        <input id="comentarios" type="text" name="comentarios">
+                    </li>
+                    <li> 
+                        <label></label>
+                        <div>
+                            <input type="checkbox" name="aviso-legal" value="aviso-legal" id="aviso-legal">
+                            <label class="aviso" for="aviso-legal">Acepto el aviso legal.</label> 
+                        </div>          
+                    </li>
+                    <li >
+                        <label></label>
+                        <div class="form-enviar">
+                            <input id="form-enviar" name="enviar" type="submit" value="Enviar">
+                        </div>
+                    </li>
+                </ul>
+            </form>
+        </section>
+
+        <!-- 2°COLUMNA FOOTER-->
+        <section class="foo-col2">
+            <h5>Siguenos en:</h5>
+            <a href="http://facebook.com"><img src="img/facebook.png" alt="facebook"></a>
+            <a href="http://twitter.com"><img src="img/001-twitter.png" alt="twitter"></a>
+            <a href="http://instagram.com"><img src="img/002-instagram.png" alt="instagram"></a>
+        </section>
+
+        <!-- 3°COLUMNA FOOTER-->
+        <section class="foo-col3">
+            <h5>Localización</h5>
+            <address>Av. Luis Espada, N°26 Bajo, 32600 Verín, Province of Ourense.</address>
+            <img src="img/localizacion.png" alt="localizacion">
+        </section>
+    </footer>
+</body>
+</html>

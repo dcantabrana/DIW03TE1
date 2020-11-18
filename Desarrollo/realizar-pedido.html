@@ -1,1 +1,232 @@
-realizar pedido
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DIW03 Tarea evaluacion 1" />
+    <title>Realizar Pedido - MIGAS HERMANAS</title>
+    <!-- Carga de fichero css -->
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+
+<body>
+    <header>
+
+        <!-- Logo y cambio idioma, opion activada con clase act-negrita podia poner etiqueta b o strong pero al ser otro tipo de fuente especial no funciona por lo que con un class se arregla-->
+        <div class="logo">
+            <img src="img/logotipo.png" alt="Migas Hermanas">
+            <p>
+                <a class="act-negrita" href="index.html">ES</a>
+                <span>&middot;</span>
+                <a href="index-pt.html">PT</a>
+            </p>
+        </div>
+
+        <!-- Menu, opcion activada con class act-menu-->
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="quienes-somos.html">QUIENES SOMOS</a></li>
+                <li><a href="productos.html">PRODUCTOS</a></li>
+                <li class="act-menu"><a href="realizar-pedido.html">REALIZAR PEDIDO</a></li>
+                <li><a href="contactar.html">CONTACTANOS</a></li>
+            </ul>
+        </nav>
+
+        <!-- Imagen con texto -->
+        <div class="ban">
+            <img src="img/pan_cinco.jpg" alt="Migas hermanas baner">
+            <div><p>Inicio > <span class="act-negrita">Realiza tu pedido</span></p></div>
+        </div>
+
+    </header>
+    
+    <main class="pag-main">
+
+        <section>
+            <h2>REALIZA TU PEDIDO</h2>
+            <!-- Formulario divido en 3 partes, Datos a rellenar, Producto a elegir, Aviso y boton -->
+            <form method="post" name="formulario">
+
+                <!-- 1°PARTE Lista para organizar los datos a rellenar -->
+                <ul class="ul-uno rp-ul-uno">
+                    <li>
+                        <label for="p-nombre">Nombre:</label>
+                        <input id="p-nombre" type="text" name="p-nombre">
+                    </li>
+                    
+                    
+                    <li>
+                        <label for="p-apellidos">Apellidos:</label>
+                        <input id="p-apellidos" type="text" name="p-apellidos">
+                    </li>
+                    
+                    
+                    <li>
+                        <label for="p-email">Email:</label>
+                        <input id="p-email" type="text" name="p-email">
+                    </li>
+                </ul>
+
+                <!-- 2°PARTE Div y dentro, titulo y una lista con 2 sublistas -->
+                <div class="div-ul-dos">
+                    <h3 class="act-negrita">¿Qué productos quieres comprar?</h3>
+                    
+                    <ul class="ul-dos">
+                        <li class="rp-lista">
+                            <!-- Sublista para Nuestros salados -->
+                            <ul>
+                                <li>
+                                    <h4>NUESTROS SALADOS</h4>          
+                                </li>
+                                <li>
+                                    <input id="pan-trigo" type="checkbox" name="pan-trigo" value="pan-trigo">
+                                    <label for="pan-trigo">Pan de trigo</label>          
+                                </li>
+                                <li>
+                                    <input id="pan-pais" type="checkbox" name="pan-pais" value="pan-pais">
+                                    <label for="pan-pais">Pan de trigo del país</label>          
+                                </li>
+                                <li>
+                                    <input id="pan-centeno" type="checkbox" name="pan-centeno" value="pan-centeno">
+                                    <label for="pan-centeno">Pan de centeno</label>          
+                                </li>
+                                <li>
+                                    <input id="pan-integral" type="checkbox" name="pan-integral" value="pan-integral">
+                                    <label for="pan-integral">Pan integral sin sal</label>          
+                                </li>
+                                <li>
+                                    <input id="pan-cereales" type="checkbox" name="pan-cereales" value="pan-cereales">
+                                    <label for="pan-cereales">Pan de cereales</label>          
+                                </li>
+                                <li>
+                                    <input id="pan-ajo" type="checkbox" name="pan-ajo" value="pan-ajo">
+                                    <label for="pan-ajo">Pan de ajo</label>          
+                                </li>
+                                <li>
+                                    <input id="pan-nueces" type="checkbox" name="pan-nueces" value="pan-nueces">
+                                    <label for="pan-nueces">Pan de nueces</label>          
+                                </li>
+                                <li>
+                                    <input id="pan-quinoa" type="checkbox" name="pan-quinoa" value="pan-quinoa">
+                                    <label for="pan-quinoa">Pan de quinoa</label>          
+                                </li>
+                                <li>
+                                    <input id="pan-cebolla" type="checkbox" name="pan-cebolla" value="pan-cebolla">
+                                    <label for="pan-cebolla">Pan de cebolla</label>          
+                                </li>
+                                <li>
+                                    <input id="pretzel" type="checkbox" name="pretzel" value="pretzel">
+                                    <label for="pretzel">Pretzel</label>          
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="rp-lista">
+                            <!-- Sublista para Nuestros dulces -->
+                            <ul>
+                                <li>
+                                    <h4>NUESTROS DULCES</h4>         
+                                </li>
+                                <li>
+                                    <input id="croissant" type="checkbox" name="croissant" value="croissant">
+                                    <label for="croissant">Croissant</label>         
+                                </li>
+                                <li>
+                                    <input id="donut" type="checkbox" name="donut" value="donut">
+                                    <label for="donut">Donut</label>          
+                                </li>
+                                <li>
+                                    <input id="macarrons" type="checkbox" name="macarrons" value="macarrons">
+                                    <label for="macarrons">Macarrons</label>         
+                                </li>
+                                <li>
+                                    <input id="ensaimadas" type="checkbox" name="ensaimadas" value="ensaimadas">
+                                    <label for="ensaimadas">Ensaimadas</label>          
+                                </li>
+                                <li>
+                                    <input id="napolitanas" type="checkbox" name="napolitanas" value="napolitanas">
+                                    <label for="napolitanas">Napolitanas</label>          
+                                </li>  
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 3°PARTE Div con el aviso y checkbox y boton -->  
+                <div class="div-tres">
+                    <div class="p-aviso-legal">
+                        <div class="p-aviso-c">
+                            <input id="p-aviso-legal" type="checkbox" name="p-aviso-legal" value="p-aviso-legal">
+                            <label for="p-aviso-legal">Acepto el aviso legal.</label>
+                        </div>
+                        <div>
+                            <p></p>
+                            <label></label>
+                        </div> 
+                    </div>         
+                    <input class="btn-realiza" type="submit" value="Realizar pedido">
+                </div>            
+            </form>
+        </section>
+    </main>   
+    
+    <footer class="i-footer">
+        <!-- Dividido en 3 partes para las 3 columnas -->
+        <!-- 1°COLUMNA FOOTER-->
+        <section class="foo-col1">
+            <h5>Contacta con nosotros</h5>
+            <p>www.migashermanas.com <span>&middot;</span> info@migashermanas.com</p>
+
+            <!-- Formulario de columna1 con lista para los datos -->
+            <form class="form-cont" method="post" name="formulario-contacto">
+                <ul>
+                    <li>
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" type="text" name="nombre">
+                    </li>
+                    <li>
+                        <label for="apellidos">Apellidos</label>
+                        <input id="apellidos" type="text" name="apellidos">
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input id="email" type="text" name="email">
+                    </li>
+                    <li>
+                        <label id="coment-label" for="comentarios">Comentarios</label>
+                        <input id="comentarios" type="text" name="comentarios">
+                    </li>
+                    <li> 
+                        <label></label>
+                        <div>
+                            <input type="checkbox" name="aviso-legal" value="aviso-legal" id="aviso-legal">
+                            <label class="aviso" for="aviso-legal">Acepto el aviso legal.</label> 
+                        </div>          
+                    </li>
+                    <li >
+                        <label></label>
+                        <div class="form-enviar">
+                            <input id="form-enviar" name="enviar" type="submit" value="Enviar">
+                        </div>
+                    </li>
+                </ul>
+            </form>
+        </section>
+
+        <!-- 2°COLUMNA FOOTER-->
+        <section class="foo-col2">
+            <h5>Siguenos en:</h5>
+            <a href="http://facebook.com"><img src="img/facebook.png" alt="facebook"></a>
+            <a href="http://twitter.com"><img src="img/001-twitter.png" alt="twitter"></a>
+            <a href="http://instagram.com"><img src="img/002-instagram.png" alt="instagram"></a>
+        </section>
+
+        <!-- 3°COLUMNA FOOTER-->
+        <section class="foo-col3">
+            <h5>Localización</h5>
+            <address>Av. Luis Espada, N°26 Bajo, 32600 Verín, Province of Ourense.</address>
+            <img src="img/localizacion.png" alt="localizacion">
+        </section>
+    </footer>
+</body>
+</html>

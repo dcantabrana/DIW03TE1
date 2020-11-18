@@ -29,7 +29,6 @@ h2{
     padding-bottom: 30px;
 }
 h3{
-    /* margin:20px 0px; */
     padding-top:30px;
     padding-bottom: 20px;
     text-align: center;
@@ -46,12 +45,10 @@ h1,h2,h4,h5{
     font-weight: bold;
     margin: 12px 0px;
 }
-table{
-    font-size: 11px;
-}
 
 /* ---------------- HEADER - LOGO ---------------- */
-.idioma{
+/* Activar en engrita idiomas y pagina actual */
+.act-negrita{
     font-weight: 700;
 }
 header .logo{  
@@ -61,17 +58,14 @@ header .logo{
     align-items: center;
     justify-content: center;
 }
-
 header .logo img{
     height: 150px;
 }
-
 header .logo p{
     position: absolute;
     right: 25px;
     top: 25px;  
 }
-
 .logo p a{
    font-size: 13px;
 }
@@ -97,45 +91,48 @@ header nav ul li a{
     padding: 25px 10px;
 }
 /* Seleccion pagina actual */
-header nav ul li:nth-child(1){
+.act-menu{
     background: rgba(255, 255, 255,.2);
 }
 
-/* -------------------- IMAGEN BANNER -------------------- */
+/* -------------------- IMAGEN BANNER PAGINAS-------------------- */
 .ban{
     position: relative;
 }
 .ban img{
     width: 100%;
-    /* height: 100%; */
+    margin-bottom: -3px;
 }
 .ban h1{
     position: absolute;
     bottom: 70px;
     width: 100%;
     text-align: center;
-    
-   
+}
+/* Barra debajo de banner foto */
+.ban div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    width: 100%;
+    background: #f8f8f8;
+    font-size: 13px;
 }
 
-
-
-/* -------------------- FOOTER -------------------- */
-footer {
+/* -------------------- FOOTER GENERAL-------------------- */
+.i-footer{
     padding: 30px;
     background: #592517;
     display: flex;
     color: #d1d1d1;
-    font-size: 11px;
+    font-size: 12px;
 }
 .foo-col1{
-    flex-grow:1;
-    /* width: 40%; */
-    
+    flex-grow:1;  
 }
 .foo-col2{
     flex-grow:1;
-    /* width: 25%; */
 }
 .foo-col2 a img{
     width: 45px;
@@ -143,15 +140,14 @@ footer {
 }
 .foo-col3{
     flex-grow:1;
-    /* width: 35%; */
 }
 .foo-col3 img{
     width: 350px;
     margin:15px 0px;
 }
 
-/* -------------------- FORMULARIO CONTACTA -------------------- */
-#form-cont{
+/* -------------------- FORMULARIO CONTACTA EN FOOTER-------------------- */
+.form-cont{
     margin: 20px 0px;
 }
 input[name="comentarios"] {
@@ -174,32 +170,38 @@ form input[type="submit"]:hover{
     cursor:pointer;
     background: #fd8ca0;
 }
-
-#form-cont label{
-    width: 80px;  
+.form-cont label{
+    width: 100px;  
+}
+.form-cont input{
+    width: 180px;
 }
 .aviso{
     margin-top:4px;
     margin-left: 4px;
     width:120px !important;
 }
-#form-cont li{
+.form-cont li{
     display: flex;
     margin: 10px 0px;
     align-items: center;
 }
-.form-com{
+#coment-label{
     align-self: flex-start;
     margin-top: 5px;
 }
 #form-enviar{
-    width: 153px;
+    width: 100px !important;
 }
-#form-enviar input{
-    float:right;
+.form-enviar{
+    width: 188px;
+    text-align: right;
+}
+#aviso-legal{
+    width: 15px !important;
 }
 
-/* -------------------- MAIN DIVISION -------------------- */
+/* -------------------- MAIN DIVISION INDEX -------------------- */
 body main{
     display: flex;
     width: 100%;
@@ -208,21 +210,15 @@ body main{
     padding: 40px 60px;
     width: 55%;
 }
-
 .col-dos{
     background: #f2f2f2;
     padding-top: 40px;
     width: 45%;
 }
 
-
 /* -------------------- NUESTROS PRODUCTOS -------------------- */
 
 .col-uno img{
-    /* width: 260px;
-    min-width: 130px;
-    height: 170px;
-    min-height: 100px; */
     border-radius: 13px;
     -webkit-border-radius: 13px;
     -moz-border-radius: 13px;
@@ -260,27 +256,23 @@ body main{
     background: #fd8ca0;
 }
 
-/* -------------------- REALIZA TU PEDIDO -------------------- */
-/* .col-dos div{
-    background: #fafafa !important;
-} */
+/* -------------------- REALIZA TU PEDIDO INDEX Y PAG-------------------- */
 .col-dos table{
     margin:0 auto;
     width: 80%;
-    /* font-size:12px; */
 }
-
 .ul-uno li{
     display: flex;
     margin: 10px 0px;
     align-items: center;
     justify-content: center;
-
+}
+.rp-ul-uno li{
+    margin: 25px 0px;
 }
 .ul-uno{
     margin-bottom: 30px;
     margin-top:10px;
-
 }
 .ul-uno label{
     width: 80px;
@@ -296,25 +288,177 @@ body main{
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
 }
-
 .ul-dos{
     display: flex;
     justify-content: space-around;
     font-size: 12px;
 }
-.div-ul-dos{
+.div-ul-dos-col{
     background: #fafafa;
+}
+.div-ul-dos{
     padding-bottom: 30px;
 }
 .div-ul-dos li{
     margin:7px 0px;
 }
-
 .div-tres{
     padding:40px 0px;
     text-align: center;
-    font-size: 13px;
+    font-size: 12px;
+}
+.p-aviso-legal{
+    display: flex;
+    justify-content: space-around;
+}
+.p-aviso-c{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.p-aviso-legal div:nth-child(2){
+    width: 150px;
 }
 .btn-realiza{
     margin:30px;
+}
+.rp-lista{
+    background: #fdf8f4;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding:10px 20px;
+}
+.ul-dos li ul li{
+    display: flex;
+    align-items: center;
+}
+
+/* -------------------- QUIENES SOMOS -------------------- */
+/* Dos primeras clases compartidas con contactanos */
+.q-main{
+    width: 95%;
+}
+.q-main section{
+    padding:30px 30px;
+}
+.q-art header{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom:40px;
+}
+.q-art p{
+    font-size: 14px;
+}
+.q-art-uno-p{
+    width: 55%;
+    font-size: 19px;
+}
+.q-art-div{
+    display: flex;
+}
+.q-art-div p{
+    margin:10px 10px;
+}
+.q-art-foo p{
+    margin:10px 10px;
+}
+.q-art{
+    padding-bottom: 30px;
+}
+
+/* -------------------- CONTACTANOS -------------------- */
+.c-main{
+    display: flex;
+    justify-content: center;
+}
+.c-main section{
+    padding:30px 30px;
+}
+.c-art header{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom:40px;
+}
+.c-art-uno-p{
+    font-size: 19px;
+}
+.c-art div{
+    display: flex;
+    justify-content: space-around;
+}
+.c-footer{
+    padding: 30px;
+    background: #592517;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d1d1d1;
+    text-align: center;
+}
+.c-footer a{
+    margin: 0px 10px;
+}
+.c-form{
+    margin: 20px 0px;
+}
+.c-form label{
+    width: 180px;  
+}
+.c-form input{
+    width: 250px;
+    height: 30px;
+    border: 1px solid rgb(173, 173, 173);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.c-aviso{
+    margin-top:4px;
+    margin-left: 4px;
+}
+.c-form li{
+    display: flex;
+    margin: 25px 0px;
+    align-items: center;
+}
+#c-comentarios{
+    width:430px;
+    height: 150px;
+}
+ #coment-label{
+    margin-bottom: -15px;
+}
+.c-enviar{
+  justify-content: center;
+}
+#c-enviar{
+    width: 130px; 
+}
+ #c-legal{
+    width: 15px;
+}
+.c-img{
+    width:400px;
+    height:230px;
+    margin-top:40px;
+}
+.c-footer img{
+    width: 55px;
+}
+
+/* -------------------- COMPARTIDO CON PAGINAS -------------------- */
+
+.pag-main{
+    justify-content: center;
+}
+.pag-main section{
+    width: 45%;
+    padding-top: 40px;
 }
