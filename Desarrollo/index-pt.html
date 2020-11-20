@@ -11,7 +11,6 @@
 
 <body>
     <header>
-
         <!-- Logo y cambio idioma, opion activada con clase act-negrita podia poner etiqueta b o strong pero al ser otro tipo de fuente especial no funciona por lo que con un class se arregla-->
         <div class="logo">
             <img src="img/logotipo.png" alt="Migas Hermanas">
@@ -38,29 +37,31 @@
             <img src="img/cabecera.jpg" alt="Migas hermanas baner">
             <h1>Migas hermanas siempre pensando en ti ;)</h1>
         </div>
-
     </header>
     
     <main>
-
         <section class="col-uno">
-            <h2>Nuestros productos</h2>
+            <header>
+                <h2>Nuestros productos</h2>
+            </header>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam rerum sit repellat obcaecati, nobis aperiam, ullam, modi fugit similique blanditiis nostrum molestias impedit suscipit dicta id sequi! Saepe, quis omnis. Lorem ipsum dolor sit amet consectetur </p>
-            <div class="img-prod">
+            <footer class="img-prod">
                 <div>
                     <img src="img/pan.jpg" width="280" height="190" alt="Panadería">
-                    <a href="panaderia.html">PANADERÍA</a>
+                    <a href="panaderia.html">PANADERIA</a>
                 </div>
                 <div>
                     <img src="img/croissant.jpg" width="280" height="190" alt="Pastelería">
-                    <a href="pasteleria.html">PASTELERÍA</a>
+                    <a href="pasteleria.html">PASTELERIA</a>
                 </div>
-            </div>
+            </footer>
         </section>
         
         <section class="col-dos">
-            <h2>Realiza tu pedido</h2>
-            <!-- Formulario divido en 3 partes, Datos a rellenar, Producto a elegir, Aviso y boton -->
+            <header>
+                <h2>Realiza tu pedido</h2>
+            </header>
+            <!-- Formulario divido en 3 partes, Datos a rellenar, Producto a elegir, Aviso y boton, esta etiqueta form es como un main general o p (la info mas importante)-->
             <form method="post" name="formulario">
 
                 <!-- 1°PARTE Lista para organizar los datos a rellenar -->
@@ -85,7 +86,7 @@
 
                 <!-- 2°PARTE Div y dentro, titulo y una lista con 2 sublistas -->
                 <div class="div-ul-dos div-ul-dos-col">
-                    <h3>¿Qué productos quieres comprar?</h3>
+                    <h3>¿Que productos quieres comprar?</h3>
                     
                     <ul class="ul-dos">
                         <li>
@@ -182,10 +183,10 @@
     <footer class="i-footer">
         <!-- Dividido en 3 partes para las 3 columnas -->
         <!-- 1°COLUMNA FOOTER-->
-        <section class="foo-col1">
+        <article class="foo-col1">
             <h5>Contacta con nosotros</h5>
             <p>www.migashermanas.com <span>&middot;</span> info@migashermanas.com</p>
-
+            
             <!-- Formulario de columna1 con lista para los datos -->
             <form class="form-cont" method="post" name="formulario-contacto">
                 <ul>
@@ -220,22 +221,22 @@
                     </li>
                 </ul>
             </form>
-        </section>
+        </article>
 
         <!-- 2°COLUMNA FOOTER-->
-        <section class="foo-col2">
+        <article class="foo-col2">
             <h5>Siguenos en:</h5>
             <a href="http://facebook.com"><img src="img/facebook.png" alt="facebook"></a>
             <a href="http://twitter.com"><img src="img/001-twitter.png" alt="twitter"></a>
             <a href="http://instagram.com"><img src="img/002-instagram.png" alt="instagram"></a>
-        </section>
+        </article>
 
         <!-- 3°COLUMNA FOOTER-->
-        <section class="foo-col3">
-            <h5>Localización</h5>
-            <address>Av. Luis Espada, N°26 Bajo, 32600 Verín, Province of Ourense.</address>
+        <article class="foo-col3">
+            <h5>Localizacion</h5>
+            <address>Av. Luis Espada, N°26 Bajo, 32600 Verin, Province of Ourense.</address>
             <img src="img/localizacion.png" alt="localizacion">
-        </section>
+        </article>
     </footer>
 </body>
 </html>

@@ -2,15 +2,9 @@
 /* @import "normalizacion.css";*/
 @import "reset.css";
 
-/* Fuente */
-@font-face{
-    font-family: 'Montserrat';
-    src: url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-}
-
 /* ---------------- ETIQUETAS EN GENERAL ---------------- */
 body{
-    font-family: 'Montserrat', 'Arial';
+    font-family: 'roboto', sans-serif;
 }
 a{
     text-decoration: none;
@@ -218,12 +212,15 @@ body main{
 
 /* -------------------- NUESTROS PRODUCTOS -------------------- */
 
-.col-uno img{
+.img-prod img{
     border-radius: 13px;
     -webkit-border-radius: 13px;
     -moz-border-radius: 13px;
     -ms-border-radius: 13px;
     -o-border-radius: 13px;
+    margin:10px 0px;
+    width: 280px;
+    height: 190px;
 }
 .img-prod{
     display: flex;
@@ -235,9 +232,6 @@ body main{
     align-items: center;
     display: flex;
     flex-direction: column;
-}
-.img-prod div img{
-    margin:10px 0px;
 }
 .img-prod div a{
     margin-top:20px;
@@ -360,6 +354,10 @@ body main{
 .q-art-div{
     display: flex;
 }
+.q-art-div img{
+    max-width: 400px;
+    max-height: 400px;
+}
 .q-art-div p{
     margin:10px 10px;
 }
@@ -454,11 +452,50 @@ body main{
 }
 
 /* -------------------- COMPARTIDO CON PAGINAS -------------------- */
-
 .pag-main{
     justify-content: center;
 }
 .pag-main section{
     width: 45%;
     padding-top: 40px;
+}
+/* -------------------- MEDIA QUERIES -------------------- */
+/* Hay que estudiar las medidas estandar que mas se utilizan para hacer 3 o 4 medias con medidas estandar y adaptar fotos, textos, menus a lo que se ve */
+
+/* Si es menos de 1180px la pantalla... */
+@media only screen and (max-width: 1180px) {
+    .img-prod img {
+        width: 200px;
+        height: 160px;
+    } 
+}
+@media only screen and (max-width: 910px) {
+    .img-prod img {
+        width: 190px;
+        height: 130px;
+    }
+    .foo-col3 img{
+        width: 250px;
+    }
+    .c-img{
+        width: 350px;
+        height: 200px;
+    }
+}
+
+/* Navegador cambiar tamaño letras a menos de 770px de pantalla para que no se pegen */
+@media only screen and (max-width: 770px) {
+    nav {
+        font-size: 12px;
+    }
+    .c-img{
+        width: 250px;
+        height: 150px;
+        margin-left: 15px;
+    }
+}
+@media only screen and (max-width: 525px) {
+    nav {
+        font-size: 9px;
+    }
 }
