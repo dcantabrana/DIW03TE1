@@ -470,11 +470,17 @@ body main{
     -moz-border-radius: 13px;
     -ms-border-radius: 13px;
     -o-border-radius: 13px;
+    -webkit-box-shadow: 3px 3px 3px 3px #ccc;
+    -moz-box-shadow:3px 3px 3px 3px #ccc;
+    box-shadow:3px 3px 3px 3px #ccc;
 }
 .products-text{
     font-size: 14px;
     padding:0px 5px;
     text-align: center;
+}
+.products-tit{
+    color:saddlebrown;
 }
 
 /* -------------------- COMPARTIDO CON PAGINAS -------------------- */
