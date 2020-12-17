@@ -450,6 +450,32 @@ body main{
 .c-footer img{
     width: 55px;
 }
+/* -------------------- PANADERIA Y PASTELERIA -------------------- */
+.product-row{
+    display: flex;
+    justify-content: space-between;
+}
+.products{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+    margin:20px 0px;
+}
+.products img {
+    width: 200px;
+    height: 180px;
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+}
+.products-text{
+    font-size: 14px;
+    padding:0px 5px;
+    text-align: center;
+}
 
 /* -------------------- COMPARTIDO CON PAGINAS -------------------- */
 .pag-main{
